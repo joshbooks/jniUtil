@@ -25,9 +25,14 @@ do
 		-e 's|\([^/]*\).class|\1|' \
 		-e 's|/|.|g'`
 
-	echo $className
 	mkdir -p $jniLocus
 	cd $jniLocus
 	javah -cp $classDir $className
 done
+
+cd $jniDir
+
+#get rid of empty files created for anonymous inner classes (I think)
+find . -name ".h" | xargs rm
+
 
