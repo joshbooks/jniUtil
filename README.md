@@ -46,7 +46,7 @@ You'll notice I specifically reference `.c` files. `pruneJni.sh` does not recogn
 `.cpp`, `.objc` or any other type of source file currently.
 
 ## Plans for expansion
-I'm currently working on a project ([JoshDB](github.com/joshbooks/JoshDB) to be specific)
+I'm currently working on a project ([JoshDB](https://www.github.com/joshbooks/JoshDB) to be specific)
 that uses the JNI, so as I do things with the JNI I'm going to try to write scripts that 
 automate those tasks so I never have to do them again. I think the next thing I'm going 
 to run into is building a JNI library and including it in a `.jar` file.
