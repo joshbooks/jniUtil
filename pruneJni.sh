@@ -16,7 +16,7 @@ recursePutInThePurse()
 	read inFile
 
 	includedHeaderNames=`\
-		awk '/#include "/ {gsub("\"",""); print $2}' $file`
+		awk '/#include "/ {gsub("\"",""); print $2}' $inFile`
 
 	for headerName in $includedHeaderNames
 	do
