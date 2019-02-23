@@ -50,7 +50,7 @@ You can make a shared library with jniMake.sh. To do that just run
 ```bash
 /some/directory/jniUtil/jniMake.sh
 ```
-and it will emit a shared library named `jniUilLib.solib` containing all your
+and it will emit a shared library named `jniUtilLib.solib` containing all your
 JNI code in `./`
 
 
