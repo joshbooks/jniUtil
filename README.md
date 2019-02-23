@@ -45,8 +45,20 @@ run
 You'll notice I specifically reference `.c` files. `pruneJni.sh` does not recognize `.rs`,
 `.cpp`, `.objc` or any other type of source file currently.
 
+
+You can make a shared library with jniMake.sh. To do that just run
+```bash
+/some/directory/jniUtil/jniMake.sh
+```
+and it will emit a shared library named `jniUilLib.solib` containing all your
+JNI code in `./`
+
+
 ## Plans for expansion
 I'm currently working on a project ([JoshDB](https://www.github.com/joshbooks/JoshDB) to be specific)
 that uses the JNI, so as I do things with the JNI I'm going to try to write scripts that 
-automate those tasks so I never have to do them again. I think the next thing I'm going 
-to run into is building a JNI library and including it in a `.jar` file.
+automate those tasks so I never have to do them again. I think the next thing 
+I'm going to run into is building a JNI library from maven automagically 
+in the maven lifecycle and including jniUtilLib.solib in a `.jar` file  i
+automagically. Be nice if I could insert code directly into pom.xml, but
+producing the snippets that need to be inserted would a very good first step
