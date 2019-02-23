@@ -5,7 +5,7 @@ worked with it.
 
 For a long while I just lived with the Sisyphean absurdity, but it's time for that to stop.
 
-So far this is just two bash scripts but with just those I feel less dread at the prospect 
+So far this is just four bash scripts but with just those I feel less dread at the prospect 
 of working with the JNI.
 
 These scripts assume your classes live in `./target/classes`, so if you're not using maven 
@@ -59,6 +59,6 @@ I'm currently working on a project ([JoshDB](https://www.github.com/joshbooks/Jo
 that uses the JNI, so as I do things with the JNI I'm going to try to write scripts that 
 automate those tasks so I never have to do them again. I think the next thing 
 I'm going to run into is building a JNI library from maven automagically 
-in the maven lifecycle and including jniUtilLib.solib in a `.jar` file  i
+in the maven lifecycle and including jniUtilLib.solib in a `.jar` file
 automagically. Be nice if I could insert code directly into pom.xml, but
 producing the snippets that need to be inserted would a very good first step
