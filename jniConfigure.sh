@@ -28,7 +28,7 @@ JAVA_LINUX_INCLUDE="$JAVA_INCLUDE/linux/"
 echo \
        	-e "\tgcc -I $JAVA_INCLUDE -I $JAVA_LINUX_INCLUDE " \
 		"-o jniUtilLib.solib " \
-		"-shared" \
+		"-shared -fPIC" \
 		" $cFileString" >>  \
 	jniMakeFile
 	
