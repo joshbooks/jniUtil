@@ -60,10 +60,10 @@ JNI code for you to include.
 
 You might be thinking to yourself "Hey, why don't you make it easy to do all
 this within the maven lifecycle" well that's the plan, see the 
-Plans For expansion section.
+[Plans For expansion](#Plans-for-Expansion) section.
 
 
-## Plans for expansion
+## Plans for Expansion
 I'm currently working on a project 
 ([JoshDB](https://www.github.com/joshbooks/JoshDB) to be specific) that uses 
 the JNI, so as I do things with the JNI I'm going to try to write scripts that
