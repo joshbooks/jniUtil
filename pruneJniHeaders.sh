@@ -3,8 +3,8 @@
 # I'm not using cpp so I don't feel like looking up whether find
 # regex supports OR, but if someone else wants to make a PR
 # they're very welcome to.
-# I am fully aware this algorithm is suboptimal. I am not carefully 
-# crafting the  perfect way to do this, I just want A way to do it that 
+# I am fully aware this algorithm is suboptimal. I am not carefully
+# crafting the  perfect way to do this, I just want A way to do it that
 # doesn't involve me grumble-swearing
 
 #export variable to subprocesses so children can detect cycles
