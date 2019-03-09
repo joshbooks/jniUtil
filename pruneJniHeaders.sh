@@ -11,6 +11,11 @@
 declare -A includedFiles
 export includedFiles
 
+# We want to include all .h files included by .c files AS WELL AS all .h files
+# included by .h files included by .c files. So doing this recursively makes
+# this a little easier. I am not concerned about exceeding maximum recursion
+# depth since if that happens you really need to restructure your code.
+# Like really.
 recursePutInThePurse()
 {
 	read inFile
