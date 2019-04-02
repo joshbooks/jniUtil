@@ -49,11 +49,11 @@ JAVA_INCLUDE="$JAVA_HOME/include"
 JAVA_LINUX_INCLUDE="$JAVA_INCLUDE/linux/"
 
 echo \
-       	-e "\tgcc -I $JAVA_INCLUDE -I $JAVA_LINUX_INCLUDE " \
-		"-o jniUtilLib.solib " \
-		"-shared -fPIC" \
-		" $cFileString" >>  \
-	jniMakeFile
+    -e "\tgcc -D_POSIX_C_SOURCE=200809L " \
+        " -I $JAVA_INCLUDE -I $JAVA_LINUX_INCLUDE " \
+        "-o jniUtilLib.solib " \
+        "-shared -fPIC" \
+        " $cFileString" >> jniMakeFile
 	
 echo "Makefile:"
 cat jniMakeFile
