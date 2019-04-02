@@ -43,7 +43,7 @@ echo "jniUtilLib.solib: $cFileString" > jniMakeFile
 
 JAVA_BIN=`which javah | sed 's|/javah||'`
 
-JAVA_HOME="$JAVA_BIN/.."
+JAVA_HOME=`readlink -f "$JAVA_BIN/.."`
 
 JAVA_INCLUDE="$JAVA_HOME/include"
 JAVA_LINUX_INCLUDE="$JAVA_INCLUDE/linux/"
