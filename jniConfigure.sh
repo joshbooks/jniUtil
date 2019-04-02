@@ -41,13 +41,19 @@ done
 
 echo "jniUtilLib.solib: $cFileString" > jniMakeFile
 
-JAVA_BIN=`which javah | sed 's|/javah||'`
+if [[ -z "$JAVA_HOME" ]]
+then
+  JAVA_BIN=`which javah | sed 's|/javah||'`
 
-JAVA_HOME=`readlink -f "$JAVA_BIN/.."`
+  JAVA_HOME=`readlink -f "$JAVA_BIN/.."`
+else
+  JAVA_BIN="$JAvA_HOME/bin"
+fi
 
 JAVA_INCLUDE="$JAVA_HOME/include"
 JAVA_LINUX_INCLUDE="$JAVA_INCLUDE/linux/"
 
+ 
 echo \
     -e "\tgcc -D_POSIX_C_SOURCE=200809L " \
         " -I $JAVA_INCLUDE -I $JAVA_LINUX_INCLUDE " \
