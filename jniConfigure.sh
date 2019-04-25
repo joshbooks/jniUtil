@@ -47,7 +47,7 @@ then
 
   JAVA_HOME=`readlink -f "$JAVA_BIN/.."`
 else
-  JAVA_BIN="$JAvA_HOME/bin"
+  JAVA_BIN="$JAVA_HOME/bin"
 fi
 
 JAVA_INCLUDE="$JAVA_HOME/include"
